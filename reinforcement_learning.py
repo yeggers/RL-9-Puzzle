@@ -47,20 +47,20 @@ parameter = 'test'                      #Parameter to be analyzed during sensiti
 # K_a[4][np.where(R_greedy == 4)] = 1
 
 
-#Specify files containing initialization results which take long to compute.  
-shifted_indices_left = tuple(np.load('results/shifted_indices/shifted_indices_left_N{N}.npy'.format(N=N)).astype(int))
-shifted_indices_right = tuple(np.load('results/shifted_indices/shifted_indices_right_N{N}.npy'.format(N=N)).astype(int))
-shifted_indices_up = tuple(np.load('results/shifted_indices/shifted_indices_up_N{N}.npy'.format(N=N)).astype(int))
-shifted_indices_down = tuple(np.load('results/shifted_indices/shifted_indices_down_N{N}.npy'.format(N=N)).astype(int))
-shifted_indices = (shifted_indices_left, shifted_indices_right, shifted_indices_up, shifted_indices_down)
+# #Specify files containing initialization results which take long to compute.  
+# shifted_indices_left = tuple(np.load('results/shifted_indices/shifted_indices_left_N{N}.npy'.format(N=N)).astype(int))
+# shifted_indices_right = tuple(np.load('results/shifted_indices/shifted_indices_right_N{N}.npy'.format(N=N)).astype(int))
+# shifted_indices_up = tuple(np.load('results/shifted_indices/shifted_indices_up_N{N}.npy'.format(N=N)).astype(int))
+# shifted_indices_down = tuple(np.load('results/shifted_indices/shifted_indices_down_N{N}.npy'.format(N=N)).astype(int))
+# shifted_indices = (shifted_indices_left, shifted_indices_right, shifted_indices_up, shifted_indices_down)
 
-shifted_states_left = np.load( 'results/shifted_states/shifted_states_left_N{N}.npy'.format(N = N))
-shifted_states_right = np.load( 'results/shifted_states/shifted_states_right_N{N}.npy'.format(N = N))
-shifted_states_up = np.load( 'results/shifted_states/shifted_states_up_N{N}.npy'.format(N = N))
-shifted_states_down = np.load( 'results/shifted_states/shifted_states_down_N{N}.npy'.format(N = N))
-shifted_states = (shifted_states_left, shifted_states_right, shifted_states_up, shifted_states_down)
+# shifted_states_left = np.load( 'results/shifted_states/shifted_states_left_N{N}.npy'.format(N = N))
+# shifted_states_right = np.load( 'results/shifted_states/shifted_states_right_N{N}.npy'.format(N = N))
+# shifted_states_up = np.load( 'results/shifted_states/shifted_states_up_N{N}.npy'.format(N = N))
+# shifted_states_down = np.load( 'results/shifted_states/shifted_states_down_N{N}.npy'.format(N = N))
+# shifted_states = (shifted_states_left, shifted_states_right, shifted_states_up, shifted_states_down)
 
-solvable_states = np.load('results/solvable_N{N}.npy'.format(N = N)).reshape(DIM)
+# solvable_states = np.load('results/solvable_N{N}.npy'.format(N = N)).reshape(DIM)
 
 
 #Intialize parameters for RL
